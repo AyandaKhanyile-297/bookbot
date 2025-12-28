@@ -1,6 +1,4 @@
-def word_count(paragraph):
-    words = paragraph.split()
-    return len(words)
+from stats import word_count
 
 def get_book_text(filepath):
     file_contents = ""
