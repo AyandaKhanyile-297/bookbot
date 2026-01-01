@@ -24,6 +24,7 @@ def display_story(data):
         print(f"{chrctr}: {cnt}")
     
 def main():
+    print("Usage: python3 main.py <path_to_book>")
     book_path = sys.argv[1]
     story = get_book_text(book_path)
     num_words = word_count(story)
