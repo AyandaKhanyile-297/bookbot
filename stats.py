@@ -17,3 +17,15 @@ def character_count(paragraph):
 
     return dictionary
     
+def dictionary_format(dictionary):
+    formatted = []
+    
+    for character in dictionary:
+        singular = {"char":character, "num":dictionary[character]}
+        formatted.append(singular)
+    
+    formatted.sort(reverse=True, key=sort_on)
+    return formatted
+    
+def sort_on(items):
+    return items["num"]    
